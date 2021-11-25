@@ -1,8 +1,8 @@
 {
-  "name": "react-card-rotate-swiper",
-  "version": "0.0.14",
-  "description": "React card rotate swiper module with Typescript",
-  "homepage": "https://github.com/Songkiyeon/react-card-rotate-swiper",
+  "name": "react-simple-memo",
+  "version": "0.0.15",
+  "description": "React Simple Memo module with Typescript",
+  "homepage": "https://github.com/Songkiyeon/react-simple-memo",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@types/react": ">=17.0.5",
     "@types/react-dom": ">=17.0.4",
-    "@types/styled-components": "^5.1.9",
+    "@types/styled-components": "^5.1.15",
     "react": ">=17.0.2",
     "react-dom": ">=17.0.2",
     "typescript": ">=4.2.4"
@@ -26,6 +26,9 @@
     "package.json"
   ],
   "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.0",
     "gsap": "^3.8.0"
   }
 }

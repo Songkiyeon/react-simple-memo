@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Memo from "./Memo";
 import Icon from "./Icon";
@@ -8,7 +8,7 @@ const Container = styled.span<any>`
 `;
 const TextArea = styled.span<any>`
   color: ${(props) =>
-    props.active === true ? props.color ?? "black" : "black"};
+    props.active === true ? props.color ?? "unset" : "unset"};
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -23,15 +23,15 @@ interface IProps {
   contents?: any;
   width: string;
   height: string;
-  title?: string;
+  title?: any;
   titleStyle?: any;
-  description?: string;
+  description?: any;
   descriptionStyle?: any;
   captionSize?: number;
   captionColor?: string;
 }
 
-function MemoInput(props: IProps) {
+export const MemoInput = (props: IProps) => {
   const [memoState, setMemoState] = useState(false);
 
   const handleTextClick = () => {
@@ -59,5 +59,5 @@ function MemoInput(props: IProps) {
       <Icon size={props.captionSize} color={props.captionColor}></Icon>
     </Container>
   );
-}
+};
 export default MemoInput;

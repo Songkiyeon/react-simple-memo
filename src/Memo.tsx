@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
@@ -41,10 +42,10 @@ interface IProps {
   width: string;
   height: string;
   color?: string;
-  title?: string;
-  titleStyle?: string;
-  description?: string;
-  descriptionStyle?: string;
+  title?: any;
+  titleStyle?: any;
+  description?: any;
+  descriptionStyle?: any;
 }
 
 function Memo(props: IProps) {

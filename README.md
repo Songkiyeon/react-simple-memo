@@ -55,12 +55,6 @@ export default App;
 
 ## Props
 
-<<<<<<< HEAD
-
-### 1.
-
-=======
-
 ### 1. memoColor
 
 - optional
